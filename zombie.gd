@@ -30,7 +30,6 @@ func _ready() -> void:
 	health = max_health
 	speed = randf_range(min_speed, max_speed)
 	player = get_tree().get_first_node_in_group("player")
-	print("Target found: ", player.name if player != null else "NONE")
 
 	if health_label != null:
 		health_label.show()
@@ -44,9 +43,12 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if player == null or not is_instance_valid(player):
 		player = get_tree().get_first_node_in_group("player")
-		print("Target found: ", player.name if player != null else "NONE")
 		if player == null:
 			return
+	
+	if not player.is_in_group("player"):
+		player = get_tree().get_first_node_in_group("player")
+		return
 
 	if player.is_dead or is_dead:
 		velocity = Vector2.ZERO
@@ -92,12 +94,12 @@ func _play_anim(anim_name: String) -> void:
 
 
 func attack_player() -> void:
-	if attack_timer > 0.0:
+	if is_dead or attack_timer > 0.0:
 		return
 
 	attack_timer = attack_interval
 
-	if player.has_method("take_damage"):
+	if player != null and is_instance_valid(player) and player.has_method("take_damage"):
 		player.take_damage(attack_damage)
 
 
@@ -128,17 +130,25 @@ func die() -> void:
 
 	is_dead = true
 	velocity = Vector2.ZERO
+
+	# Stop movement and damage immediately.
 	set_physics_process(false)
 
+	# Disable the zombie's physical collision.
 	var collision_shape = get_node_or_null("CollisionShape2D")
 	if collision_shape:
 		collision_shape.set_deferred("disabled", true)
 
+	# Disable detection and attack areas.
 	detection_area.set_deferred("monitoring", false)
+	detection_area.set_deferred("monitorable", false)
 	attack_area.set_deferred("monitoring", false)
+	attack_area.set_deferred("monitorable", false)
 
+	# Play the death animation.
 	animated_sprite.play("zombie_death")
 
+	# Wait for the animation to finish.
 	var frames = animated_sprite.sprite_frames
 	var frame_count = frames.get_frame_count("zombie_death")
 	var fps = frames.get_animation_speed("zombie_death")

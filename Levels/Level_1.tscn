@@ -25,6 +25,7 @@ polygon = PackedVector2Array(38.501587, -8.054993, 116.50159, -9.054993, 109.501
 
 [node name="Door" type="Area2D" parent="." unique_id=360628056]
 script = ExtResource("5_ui7qv")
+target_room = "uid://c0iwrhv4bikrf"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=298412804]
 position = Vector2(69.375, 519.5)
@@ -32,3 +33,9 @@ shape = SubResource("RectangleShape2D_r40sf")
 
 [node name="Zombie" parent="." unique_id=697328472 instance=ExtResource("2_waoec")]
 position = Vector2(921, 485)
+
+[node name="Zombie2" parent="." unique_id=1480481211 instance=ExtResource("2_waoec")]
+position = Vector2(665, 125)
+
+[node name="Zombie3" parent="." unique_id=714656145 instance=ExtResource("2_waoec")]
+position = Vector2(1257, 528)

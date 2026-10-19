@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c0iwrhv4bikrf"]
 
 [ext_resource type="Texture2D" uid="uid://dv58lqtyvycsj" path="res://BG02.png" id="1_ll1bl"]
+[ext_resource type="PackedScene" uid="uid://cjgx3fkunkjqi" path="res://Scenes/Zombie.tscn" id="2_kbe2v"]
 
 [node name="Level 2" type="Node2D" unique_id=1888797646]
 
@@ -10,3 +11,7 @@ offset_bottom = 941.0
 texture = ExtResource("1_ll1bl")
 
 [node name="right_side" type="Marker2D" parent="." unique_id=1153071728]
+position = Vector2(1333, 441)
+
+[node name="Zombie3" parent="." unique_id=697328472 instance=ExtResource("2_kbe2v")]
+position = Vector2(625, 158)
