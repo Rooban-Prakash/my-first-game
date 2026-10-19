@@ -1,19 +1,18 @@
 
 extends CharacterBody2D
 
+@export var zombie_id: String = ""
 @export var min_speed := 70.0
 @export var max_speed := 100.0
 @export var stop_distance := 35.0
 @export var max_health := 100
+@export var attack_damage := 10
+@export var attack_interval := 1.0
 
 var speed: float
 var health: int
 var is_dead := false
 var has_detected_player := false
-
-@export var attack_damage := 10
-@export var attack_interval := 1.0
-
 var attack_timer := 0.0
 var player: Node2D = null
 
@@ -45,7 +44,7 @@ func _physics_process(delta: float) -> void:
 		player = get_tree().get_first_node_in_group("player")
 		if player == null:
 			return
-	
+
 	if not player.is_in_group("player"):
 		player = get_tree().get_first_node_in_group("player")
 		return
@@ -131,10 +130,28 @@ func die() -> void:
 	is_dead = true
 	velocity = Vector2.ZERO
 
+	# Save the zombie's death before removing it.
+	var master = get_tree().current_scene
+	var world = master.get_node_or_null("World")
+
+	if world != null and zombie_id != "":
+		var node: Node = self
+
+		while node.get_parent() != null and node.get_parent() != world:
+			node = node.get_parent()
+
+		if node.scene_file_path != "":
+			master.register_zombie_killed(node.scene_file_path, zombie_id)
+			print("Zombie death saved: ", zombie_id, " in ", node.scene_file_path)
+		else:
+			push_warning("Could not find the room scene path for zombie: " + zombie_id)
+	else:
+		push_warning("Missing World node or zombie_id on zombie!")
+
 	# Stop movement and damage immediately.
 	set_physics_process(false)
 
-	# Disable the zombie's physical collision.
+	# Disable physical collision.
 	var collision_shape = get_node_or_null("CollisionShape2D")
 	if collision_shape:
 		collision_shape.set_deferred("disabled", true)

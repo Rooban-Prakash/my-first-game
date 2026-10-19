@@ -7,8 +7,12 @@
 [node name="Node2D" type="Node2D" unique_id=1903045765]
 script = ExtResource("1_p8ou0")
 
-[node name="World" parent="." unique_id=493563487 instance=ExtResource("1_j3u4y")]
-position = Vector2(-1, 17)
-
 [node name="player" parent="." unique_id=1662768559 instance=ExtResource("2_p8ou0")]
-position = Vector2(433, 603)
+position = Vector2(392, 699)
+collision_layer = 1
+collision_mask = 5
+
+[node name="World" type="Node2D" parent="." unique_id=841256797]
+
+[node name="Node2D" parent="World" unique_id=493563487 instance=ExtResource("1_j3u4y")]
+position = Vector2(3, 15)

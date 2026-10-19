@@ -106,7 +106,7 @@ radius = 41.04875
 
 [node name="Zombie" type="CharacterBody2D" unique_id=697328472 groups=["zombies"]]
 position = Vector2(407, 351)
-collision_layer = 5
+collision_mask = 5
 script = ExtResource("1_h15oy")
 
 [node name="Zombie Collision" type="CollisionShape2D" parent="." unique_id=1283594129]
@@ -126,8 +126,8 @@ frame_progress = 0.3157842
 [node name="Detection Area" type="Area2D" parent="." unique_id=800048214 groups=["zombies"]]
 light_mask = 4
 visibility_layer = 4
-collision_layer = 0
-collision_mask = 2
+collision_layer = 255
+collision_mask = 255
 
 [node name="Zombie Collision area" type="CollisionShape2D" parent="Detection Area" unique_id=474853902]
 light_mask = 3

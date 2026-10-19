@@ -2,6 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://dv58lqtyvycsj" path="res://BG02.png" id="1_ll1bl"]
 [ext_resource type="PackedScene" uid="uid://cjgx3fkunkjqi" path="res://Scenes/Zombie.tscn" id="2_kbe2v"]
+[ext_resource type="Script" uid="uid://cua58yg6lys4m" path="res://Levels/door.gd" id="3_arsda"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgq3b"]
+size = Vector2(74.625, 165)
 
 [node name="Level 2" type="Node2D" unique_id=1888797646]
 
@@ -10,8 +14,52 @@ offset_right = 1672.0
 offset_bottom = 941.0
 texture = ExtResource("1_ll1bl")
 
-[node name="right_side" type="Marker2D" parent="." unique_id=1153071728]
-position = Vector2(1333, 441)
+[node name="Zombie4" parent="TextureRect" unique_id=697328472 instance=ExtResource("2_kbe2v")]
+position = Vector2(455, 322)
 
-[node name="Zombie3" parent="." unique_id=697328472 instance=ExtResource("2_kbe2v")]
-position = Vector2(625, 158)
+[node name="right_side" type="Marker2D" parent="." unique_id=1153071728]
+position = Vector2(1282, 412)
+
+[node name="top_side" type="Marker2D" parent="." unique_id=1299443837]
+position = Vector2(823, 105)
+
+[node name="left_side" type="Marker2D" parent="." unique_id=1572681990]
+position = Vector2(319, 441)
+
+[node name="bottom_side" type="Marker2D" parent="." unique_id=2042003805]
+position = Vector2(837, 850)
+
+[node name="Door" type="Area2D" parent="." unique_id=1041089911]
+script = ExtResource("3_arsda")
+target_room = "uid://dnuv2w2814454"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=1099654235]
+position = Vector2(1391.3125, 422)
+shape = SubResource("RectangleShape2D_dgq3b")
+
+[node name="Door2" type="Area2D" parent="." unique_id=1608588387]
+script = ExtResource("3_arsda")
+target_room = "uid://dnuv2w2814454"
+target_spawn = "left_side"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door2" unique_id=67539313]
+position = Vector2(287, 424)
+shape = SubResource("RectangleShape2D_dgq3b")
+
+[node name="Door3" type="Area2D" parent="." unique_id=1858273676]
+script = ExtResource("3_arsda")
+target_room = "uid://dnuv2w2814454"
+target_spawn = "top_side"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door3" unique_id=153511702]
+position = Vector2(835, 50)
+shape = SubResource("RectangleShape2D_dgq3b")
+
+[node name="Door4" type="Area2D" parent="." unique_id=124218547]
+script = ExtResource("3_arsda")
+target_room = "uid://dnuv2w2814454"
+target_spawn = "bottom_side"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door4" unique_id=1174464204]
+position = Vector2(835, 856)
+shape = SubResource("RectangleShape2D_dgq3b")
