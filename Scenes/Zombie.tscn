@@ -104,7 +104,7 @@ radius = 41.04875
 
 [sub_resource type="LabelSettings" id="LabelSettings_myxdv"]
 
-[node name="Zombie" type="CharacterBody2D" unique_id=697328472 groups=["player", "zombies"]]
+[node name="Zombie" type="CharacterBody2D" unique_id=697328472 groups=["zombies"]]
 position = Vector2(407, 351)
 collision_layer = 5
 script = ExtResource("1_h15oy")

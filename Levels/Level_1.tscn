@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://dnuv2w2814454"]
 
 [ext_resource type="Texture2D" uid="uid://43jr514trf10" path="res://BG1.png" id="1_wvewk"]
-[ext_resource type="PackedScene" uid="uid://d0qg3x665wugm" path="res://Scenes/player.tscn" id="2_xtg75"]
+[ext_resource type="PackedScene" uid="uid://cjgx3fkunkjqi" path="res://Scenes/Zombie.tscn" id="2_waoec"]
 [ext_resource type="Script" uid="uid://cua58yg6lys4m" path="res://Levels/door.gd" id="5_ui7qv"]
-[ext_resource type="PackedScene" uid="uid://wfbld8plib5n" path="res://zombie2.tscn" id="5_wsn87"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r40sf"]
 size = Vector2(77.25, 165)
@@ -31,8 +30,5 @@ script = ExtResource("5_ui7qv")
 position = Vector2(69.375, 519.5)
 shape = SubResource("RectangleShape2D_r40sf")
 
-[node name="Player" parent="." unique_id=1662768559 instance=ExtResource("2_xtg75")]
-position = Vector2(405, 549)
-
-[node name="Zombie" parent="." unique_id=697328472 instance=ExtResource("5_wsn87")]
-position = Vector2(976, 536)
+[node name="Zombie" parent="." unique_id=697328472 instance=ExtResource("2_waoec")]
+position = Vector2(921, 485)

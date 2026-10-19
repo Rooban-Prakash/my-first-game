@@ -150,7 +150,7 @@ func _physics_process(delta: float) -> void:
 		) * stamina_ratio
 
 	elif direction != Vector2.ZERO:
-		stamina -= stamina_normal_drain_rate * delta
+		stamina += stamina_normal_drain_rate * delta
 		current_speed = normal_speed
 
 	else:

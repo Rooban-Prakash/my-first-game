@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ciloi0up18qw7"]
+
+[ext_resource type="PackedScene" uid="uid://d0qg3x665wugm" path="res://Scenes/player.tscn" id="1_8od7v"]
+[ext_resource type="PackedScene" uid="uid://cjgx3fkunkjqi" path="res://Scenes/Zombie.tscn" id="2_qc4db"]
+
+[node name="Node2D" type="Node2D" unique_id=1075246728]
+
+[node name="player" parent="." unique_id=1662768559 groups=["zombies"] instance=ExtResource("1_8od7v")]
+position = Vector2(368, 720)
+
+[node name="Zombie" parent="." unique_id=697328472 instance=ExtResource("2_qc4db")]
+position = Vector2(723, 516)
