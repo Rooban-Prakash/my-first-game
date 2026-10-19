@@ -3,12 +3,13 @@ extends Node2D
 
 @export var starting_room: PackedScene
 
-@onready var player: CharacterBody2D = $World/player
+@onready var player = get_tree().get_first_node_in_group("player")
 @onready var world: Node2D = $World
 
 var current_room: Node2D
 
 func _ready() -> void:
+	print("Player found: ", player)
 	change_room(starting_room, "SouthSpawn")
 
 

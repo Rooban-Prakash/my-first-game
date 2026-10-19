@@ -123,7 +123,7 @@ sprite_frames = SubResource("SpriteFrames_tnqc8")
 animation = &"zombie_attack"
 frame_progress = 0.3157842
 
-[node name="Detection Area" type="Area2D" parent="." unique_id=800048214]
+[node name="Detection Area" type="Area2D" parent="." unique_id=800048214 groups=["zombies"]]
 light_mask = 4
 visibility_layer = 4
 collision_layer = 0

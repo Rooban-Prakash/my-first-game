@@ -396,7 +396,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=1662768559]
+[node name="Player" type="CharacterBody2D" unique_id=1662768559 groups=["player"]]
 z_index = 1
 position = Vector2(332, 200)
 collision_layer = 3

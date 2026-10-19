@@ -37,7 +37,7 @@ var damage_number_scene = preload("res://zombie_damage.tscn")
 # REFERENCES
 # =========================
 
-@onready var player: CharacterBody2D = get_parent().get_node("player")
+@onready var player = get_tree().get_first_node_in_group("player")
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var detection_area: Area2D = $"Detection Area"
 @onready var attack_area: Area2D = $"Atack Area"
@@ -74,6 +74,12 @@ func _ready() -> void:
 # =========================
 
 func _physics_process(delta: float) -> void:
+	if player == null:
+		return
+	if player.is_dead:
+		return
+	
+	
 	if is_dead:
 		return
 	if health_label != null:

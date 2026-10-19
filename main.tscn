@@ -228,7 +228,7 @@ tile_set = SubResource("TileSet_yaehf")
 [node name="player" parent="." unique_id=1662768559 groups=["player", "zombies"] instance=ExtResource("18_074og")]
 position = Vector2(368, 720)
 
-[node name="Zombie" parent="." unique_id=697328472 instance=ExtResource("4_7mycd")]
+[node name="Zombie" parent="." unique_id=1625545471 instance=ExtResource("4_7mycd")]
 position = Vector2(723, 516)
 
 [node name="tree" parent="." unique_id=174008905 instance=ExtResource("15_vivmo")]

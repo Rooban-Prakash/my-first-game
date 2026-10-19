@@ -1,13 +1,18 @@
+
 extends Area2D
 
-@export var target_room: PackedScene
+var entered = false
+
+@export_file("*.tscn") var target_room: String
 
 func _on_body_entered(body: Node2D) -> void:
-	if not body.is_in_group("player"):
-		return
+	if body.is_in_group("player"):
+		entered = true
 
-	if target_room == null:
-		push_error("No target room assigned!")
-		return
+func _on_body_exited(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		entered = false
 
-	get_tree().change_scene_to_packed(target_room)
+func _process(_delta: float) -> void:
+	if entered and Input.is_action_just_pressed("ui_accept"):
+		get_tree().change_scene_to_file(target_room)
