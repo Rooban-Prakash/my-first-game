@@ -1,0 +1,1753 @@
+{
+ "player_sheet": {
+  "file": "player/player_sheet.png",
+  "cell": [
+   112,
+   112
+  ],
+  "grid": [
+   4,
+   4
+  ],
+  "hframes": 4,
+  "vframes": 4,
+  "size": [
+   448,
+   448
+  ],
+  "frames": {
+   "idle_down": {
+    "x": 0,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "idle_left": {
+    "x": 112,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "idle_up": {
+    "x": 224,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "idle_right": {
+    "x": 336,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "walk_down": {
+    "x": 0,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 1,
+    "index": 4
+   },
+   "walk_left": {
+    "x": 112,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 1,
+    "index": 5
+   },
+   "walk_up": {
+    "x": 224,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 2,
+    "row": 1,
+    "index": 6
+   },
+   "walk_right": {
+    "x": 336,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 3,
+    "row": 1,
+    "index": 7
+   },
+   "shoot_down": {
+    "x": 0,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 2,
+    "index": 8
+   },
+   "shoot_left": {
+    "x": 112,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 2,
+    "index": 9
+   },
+   "shoot_up": {
+    "x": 224,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 2,
+    "row": 2,
+    "index": 10
+   },
+   "shoot_right": {
+    "x": 336,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 3,
+    "row": 2,
+    "index": 11
+   },
+   "hurt": {
+    "x": 0,
+    "y": 336,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 3,
+    "index": 12
+   },
+   "die": {
+    "x": 112,
+    "y": 336,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 3,
+    "index": 13
+   }
+  }
+ },
+ "player_walk_cycle": {
+  "file": "player/player_walk_cycle.png",
+  "cell": [
+   112,
+   112
+  ],
+  "grid": [
+   4,
+   4
+  ],
+  "hframes": 4,
+  "vframes": 4,
+  "size": [
+   448,
+   448
+  ],
+  "frames": {
+   "walk_down_0": {
+    "x": 0,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "walk_down_1": {
+    "x": 112,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "walk_down_2": {
+    "x": 224,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "walk_down_3": {
+    "x": 336,
+    "y": 0,
+    "w": 112,
+    "h": 112,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "walk_left_0": {
+    "x": 0,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 1,
+    "index": 4
+   },
+   "walk_left_1": {
+    "x": 112,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 1,
+    "index": 5
+   },
+   "walk_left_2": {
+    "x": 224,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 2,
+    "row": 1,
+    "index": 6
+   },
+   "walk_left_3": {
+    "x": 336,
+    "y": 112,
+    "w": 112,
+    "h": 112,
+    "col": 3,
+    "row": 1,
+    "index": 7
+   },
+   "walk_up_0": {
+    "x": 0,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 2,
+    "index": 8
+   },
+   "walk_up_1": {
+    "x": 112,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 2,
+    "index": 9
+   },
+   "walk_up_2": {
+    "x": 224,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 2,
+    "row": 2,
+    "index": 10
+   },
+   "walk_up_3": {
+    "x": 336,
+    "y": 224,
+    "w": 112,
+    "h": 112,
+    "col": 3,
+    "row": 2,
+    "index": 11
+   },
+   "walk_right_0": {
+    "x": 0,
+    "y": 336,
+    "w": 112,
+    "h": 112,
+    "col": 0,
+    "row": 3,
+    "index": 12
+   },
+   "walk_right_1": {
+    "x": 112,
+    "y": 336,
+    "w": 112,
+    "h": 112,
+    "col": 1,
+    "row": 3,
+    "index": 13
+   },
+   "walk_right_2": {
+    "x": 224,
+    "y": 336,
+    "w": 112,
+    "h": 112,
+    "col": 2,
+    "row": 3,
+    "index": 14
+   },
+   "walk_right_3": {
+    "x": 336,
+    "y": 336,
+    "w": 112,
+    "h": 112,
+    "col": 3,
+    "row": 3,
+    "index": 15
+   }
+  }
+ },
+ "zombie_normal": {
+  "file": "zombies/zombie_normal_sheet.png",
+  "cell": [
+   128,
+   112
+  ],
+  "grid": [
+   5,
+   2
+  ],
+  "hframes": 5,
+  "vframes": 2,
+  "size": [
+   640,
+   224
+  ],
+  "frames": {
+   "walk_0": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "walk_1": {
+    "x": 128,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "walk_2": {
+    "x": 256,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "walk_3": {
+    "x": 384,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "walk_4": {
+    "x": 512,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 4,
+    "row": 0,
+    "index": 4
+   },
+   "attack_0": {
+    "x": 0,
+    "y": 112,
+    "w": 128,
+    "h": 112,
+    "col": 0,
+    "row": 1,
+    "index": 5
+   },
+   "attack_1": {
+    "x": 128,
+    "y": 112,
+    "w": 128,
+    "h": 112,
+    "col": 1,
+    "row": 1,
+    "index": 6
+   },
+   "attack_2": {
+    "x": 256,
+    "y": 112,
+    "w": 128,
+    "h": 112,
+    "col": 2,
+    "row": 1,
+    "index": 7
+   },
+   "attack_3": {
+    "x": 384,
+    "y": 112,
+    "w": 128,
+    "h": 112,
+    "col": 3,
+    "row": 1,
+    "index": 8
+   },
+   "attack_4": {
+    "x": 512,
+    "y": 112,
+    "w": 128,
+    "h": 112,
+    "col": 4,
+    "row": 1,
+    "index": 9
+   }
+  }
+ },
+ "zombie_fast": {
+  "file": "zombies/zombie_fast_sheet.png",
+  "cell": [
+   128,
+   112
+  ],
+  "grid": [
+   3,
+   1
+  ],
+  "hframes": 3,
+  "vframes": 1,
+  "size": [
+   384,
+   112
+  ],
+  "frames": {
+   "run_0": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "run_1": {
+    "x": 128,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "run_2": {
+    "x": 256,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   }
+  }
+ },
+ "zombie_tank": {
+  "file": "zombies/zombie_tank_sheet.png",
+  "cell": [
+   112,
+   128
+  ],
+  "grid": [
+   3,
+   1
+  ],
+  "hframes": 3,
+  "vframes": 1,
+  "size": [
+   336,
+   128
+  ],
+  "frames": {
+   "walk_0": {
+    "x": 0,
+    "y": 0,
+    "w": 112,
+    "h": 128,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "walk_1": {
+    "x": 112,
+    "y": 0,
+    "w": 112,
+    "h": 128,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "walk_2": {
+    "x": 224,
+    "y": 0,
+    "w": 112,
+    "h": 128,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   }
+  }
+ },
+ "zombie_die": {
+  "file": "zombies/zombie_die_sheet.png",
+  "cell": [
+   128,
+   112
+  ],
+  "grid": [
+   2,
+   2
+  ],
+  "hframes": 2,
+  "vframes": 2,
+  "size": [
+   256,
+   224
+  ],
+  "frames": {
+   "die_0": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "die_1": {
+    "x": 128,
+    "y": 0,
+    "w": 128,
+    "h": 112,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "die_2": {
+    "x": 0,
+    "y": 112,
+    "w": 128,
+    "h": 112,
+    "col": 0,
+    "row": 1,
+    "index": 2
+   },
+   "die_3": {
+    "x": 128,
+    "y": 112,
+    "w": 128,
+    "h": 112,
+    "col": 1,
+    "row": 1,
+    "index": 3
+   }
+  }
+ },
+ "tiles": {
+  "file": "environment/environment_tiles_64.png",
+  "cell": [
+   64,
+   64
+  ],
+  "grid": [
+   8,
+   2
+  ],
+  "hframes": 8,
+  "vframes": 2,
+  "size": [
+   512,
+   128
+  ],
+  "frames": {
+   "dirt": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "grass_a": {
+    "x": 64,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "grass_b": {
+    "x": 128,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "asphalt_cracked_a": {
+    "x": 192,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "road_line": {
+    "x": 256,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 4,
+    "row": 0,
+    "index": 4
+   },
+   "concrete_gray_spots": {
+    "x": 320,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 5,
+    "row": 0,
+    "index": 5
+   },
+   "asphalt_cracked_b": {
+    "x": 384,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 6,
+    "row": 0,
+    "index": 6
+   },
+   "asphalt_cracked_c": {
+    "x": 448,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "col": 7,
+    "row": 0,
+    "index": 7
+   },
+   "wood_planks": {
+    "x": 0,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 0,
+    "row": 1,
+    "index": 8
+   },
+   "concrete_light": {
+    "x": 64,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 1,
+    "row": 1,
+    "index": 9
+   },
+   "floor_tiles_small": {
+    "x": 128,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 2,
+    "row": 1,
+    "index": 10
+   },
+   "floor_tiles_large": {
+    "x": 192,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 3,
+    "row": 1,
+    "index": 11
+   },
+   "sewer_grate": {
+    "x": 256,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 4,
+    "row": 1,
+    "index": 12
+   },
+   "brick_wall": {
+    "x": 320,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 5,
+    "row": 1,
+    "index": 13
+   },
+   "concrete_cracked": {
+    "x": 384,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 6,
+    "row": 1,
+    "index": 14
+   },
+   "asphalt_hole": {
+    "x": 448,
+    "y": 64,
+    "w": 64,
+    "h": 64,
+    "col": 7,
+    "row": 1,
+    "index": 15
+   }
+  }
+ },
+ "tiles_original_ratio": {
+  "file": "environment/environment_tiles_original_ratio.png",
+  "cell": [
+   64,
+   106
+  ],
+  "grid": [
+   8,
+   2
+  ],
+  "hframes": 8,
+  "vframes": 2,
+  "size": [
+   512,
+   212
+  ],
+  "frames": {
+   "dirt": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "grass_a": {
+    "x": 64,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "grass_b": {
+    "x": 128,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "asphalt_cracked_a": {
+    "x": 192,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "road_line": {
+    "x": 256,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 4,
+    "row": 0,
+    "index": 4
+   },
+   "concrete_gray_spots": {
+    "x": 320,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 5,
+    "row": 0,
+    "index": 5
+   },
+   "asphalt_cracked_b": {
+    "x": 384,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 6,
+    "row": 0,
+    "index": 6
+   },
+   "asphalt_cracked_c": {
+    "x": 448,
+    "y": 0,
+    "w": 64,
+    "h": 106,
+    "col": 7,
+    "row": 0,
+    "index": 7
+   },
+   "wood_planks": {
+    "x": 0,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 0,
+    "row": 1,
+    "index": 8
+   },
+   "concrete_light": {
+    "x": 64,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 1,
+    "row": 1,
+    "index": 9
+   },
+   "floor_tiles_small": {
+    "x": 128,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 2,
+    "row": 1,
+    "index": 10
+   },
+   "floor_tiles_large": {
+    "x": 192,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 3,
+    "row": 1,
+    "index": 11
+   },
+   "sewer_grate": {
+    "x": 256,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 4,
+    "row": 1,
+    "index": 12
+   },
+   "brick_wall": {
+    "x": 320,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 5,
+    "row": 1,
+    "index": 13
+   },
+   "concrete_cracked": {
+    "x": 384,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 6,
+    "row": 1,
+    "index": 14
+   },
+   "asphalt_hole": {
+    "x": 448,
+    "y": 106,
+    "w": 64,
+    "h": 106,
+    "col": 7,
+    "row": 1,
+    "index": 15
+   }
+  }
+ },
+ "props_nature": {
+  "file": "environment/props_nature_sheet.png",
+  "cell": [
+   88,
+   136
+  ],
+  "grid": [
+   5,
+   2
+  ],
+  "hframes": 5,
+  "vframes": 2,
+  "size": [
+   440,
+   272
+  ],
+  "frames": {
+   "tree": {
+    "x": 0,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "dead_tree": {
+    "x": 88,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "bush_a": {
+    "x": 176,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "bush_b": {
+    "x": 264,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "rocks": {
+    "x": 352,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 4,
+    "row": 0,
+    "index": 4
+   },
+   "rocks_small": {
+    "x": 0,
+    "y": 136,
+    "w": 88,
+    "h": 136,
+    "col": 0,
+    "row": 1,
+    "index": 5
+   },
+   "crate_small": {
+    "x": 88,
+    "y": 136,
+    "w": 88,
+    "h": 136,
+    "col": 1,
+    "row": 1,
+    "index": 6
+   },
+   "barrel_red": {
+    "x": 176,
+    "y": 136,
+    "w": 88,
+    "h": 136,
+    "col": 2,
+    "row": 1,
+    "index": 7
+   },
+   "tires": {
+    "x": 264,
+    "y": 136,
+    "w": 88,
+    "h": 136,
+    "col": 3,
+    "row": 1,
+    "index": 8
+   },
+   "hole": {
+    "x": 352,
+    "y": 136,
+    "w": 88,
+    "h": 136,
+    "col": 4,
+    "row": 1,
+    "index": 9
+   }
+  }
+ },
+ "props_street": {
+  "file": "environment/props_street_sheet.png",
+  "cell": [
+   120,
+   128
+  ],
+  "grid": [
+   5,
+   2
+  ],
+  "hframes": 5,
+  "vframes": 2,
+  "size": [
+   600,
+   256
+  ],
+  "frames": {
+   "lamp_post": {
+    "x": 0,
+    "y": 0,
+    "w": 120,
+    "h": 128,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "bench": {
+    "x": 120,
+    "y": 0,
+    "w": 120,
+    "h": 128,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "bin_green": {
+    "x": 240,
+    "y": 0,
+    "w": 120,
+    "h": 128,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "bin_blue": {
+    "x": 360,
+    "y": 0,
+    "w": 120,
+    "h": 128,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "barrel_rust": {
+    "x": 480,
+    "y": 0,
+    "w": 120,
+    "h": 128,
+    "col": 4,
+    "row": 0,
+    "index": 4
+   },
+   "cardboard_box": {
+    "x": 0,
+    "y": 128,
+    "w": 120,
+    "h": 128,
+    "col": 0,
+    "row": 1,
+    "index": 5
+   },
+   "crate_wood": {
+    "x": 120,
+    "y": 128,
+    "w": 120,
+    "h": 128,
+    "col": 1,
+    "row": 1,
+    "index": 6
+   },
+   "traffic_cone": {
+    "x": 240,
+    "y": 128,
+    "w": 120,
+    "h": 128,
+    "col": 2,
+    "row": 1,
+    "index": 7
+   },
+   "fence": {
+    "x": 360,
+    "y": 128,
+    "w": 120,
+    "h": 128,
+    "col": 3,
+    "row": 1,
+    "index": 8
+   },
+   "fence_post": {
+    "x": 480,
+    "y": 128,
+    "w": 120,
+    "h": 128,
+    "col": 4,
+    "row": 1,
+    "index": 9
+   }
+  }
+ },
+ "dustbins": {
+  "file": "environment/dustbin_hide_sheet.png",
+  "cell": [
+   88,
+   136
+  ],
+  "grid": [
+   4,
+   1
+  ],
+  "hframes": 4,
+  "vframes": 1,
+  "size": [
+   352,
+   136
+  ],
+  "frames": {
+   "closed": {
+    "x": 0,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "open": {
+    "x": 88,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "player_hidden": {
+    "x": 176,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "closed_alt": {
+    "x": 264,
+    "y": 0,
+    "w": 88,
+    "h": 136,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   }
+  }
+ },
+ "doors_crates": {
+  "file": "environment/doors_crates_sheet.png",
+  "cell": [
+   64,
+   120
+  ],
+  "grid": [
+   4,
+   1
+  ],
+  "hframes": 4,
+  "vframes": 1,
+  "size": [
+   256,
+   120
+  ],
+  "frames": {
+   "door_closed": {
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 120,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "door_open": {
+    "x": 64,
+    "y": 0,
+    "w": 64,
+    "h": 120,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "crate_breakable": {
+    "x": 128,
+    "y": 0,
+    "w": 64,
+    "h": 120,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "crate_broken": {
+    "x": 192,
+    "y": 0,
+    "w": 64,
+    "h": 120,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   }
+  }
+ },
+ "weapons": {
+  "file": "items/weapons_sheet.png",
+  "cell": [
+   128,
+   72
+  ],
+  "grid": [
+   4,
+   2
+  ],
+  "hframes": 4,
+  "vframes": 2,
+  "size": [
+   512,
+   144
+  ],
+  "frames": {
+   "pistol": {
+    "x": 0,
+    "y": 0,
+    "w": 128,
+    "h": 72,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "shotgun": {
+    "x": 128,
+    "y": 0,
+    "w": 128,
+    "h": 72,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "smg": {
+    "x": 256,
+    "y": 0,
+    "w": 128,
+    "h": 72,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "rifle": {
+    "x": 384,
+    "y": 0,
+    "w": 128,
+    "h": 72,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "bullet": {
+    "x": 0,
+    "y": 72,
+    "w": 128,
+    "h": 72,
+    "col": 0,
+    "row": 1,
+    "index": 4
+   },
+   "shell": {
+    "x": 128,
+    "y": 72,
+    "w": 128,
+    "h": 72,
+    "col": 1,
+    "row": 1,
+    "index": 5
+   },
+   "ammo_box": {
+    "x": 256,
+    "y": 72,
+    "w": 128,
+    "h": 72,
+    "col": 2,
+    "row": 1,
+    "index": 6
+   },
+   "reload_icon": {
+    "x": 384,
+    "y": 72,
+    "w": 128,
+    "h": 72,
+    "col": 3,
+    "row": 1,
+    "index": 7
+   }
+  }
+ },
+ "pickups": {
+  "file": "items/pickups_sheet.png",
+  "cell": [
+   72,
+   96
+  ],
+  "grid": [
+   4,
+   1
+  ],
+  "hframes": 4,
+  "vframes": 1,
+  "size": [
+   288,
+   96
+  ],
+  "frames": {
+   "ammo": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 96,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "medkit": {
+    "x": 72,
+    "y": 0,
+    "w": 72,
+    "h": 96,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "stamina_drink": {
+    "x": 144,
+    "y": 0,
+    "w": 72,
+    "h": 96,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "key": {
+    "x": 216,
+    "y": 0,
+    "w": 72,
+    "h": 96,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   }
+  }
+ },
+ "ui_icons": {
+  "file": "ui/ui_icons_sheet.png",
+  "cell": [
+   72,
+   88
+  ],
+  "grid": [
+   5,
+   1
+  ],
+  "hframes": 5,
+  "vframes": 1,
+  "size": [
+   360,
+   88
+  ],
+  "frames": {
+   "health": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 88,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "stamina": {
+    "x": 72,
+    "y": 0,
+    "w": 72,
+    "h": 88,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "ammo": {
+    "x": 144,
+    "y": 0,
+    "w": 72,
+    "h": 88,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "inventory": {
+    "x": 216,
+    "y": 0,
+    "w": 72,
+    "h": 88,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "settings": {
+    "x": 288,
+    "y": 0,
+    "w": 72,
+    "h": 88,
+    "col": 4,
+    "row": 0,
+    "index": 4
+   }
+  }
+ },
+ "ui_elements": {
+  "file": "ui/ui_elements_sheet.png",
+  "cell": [
+   144,
+   72
+  ],
+  "grid": [
+   5,
+   1
+  ],
+  "hframes": 5,
+  "vframes": 1,
+  "size": [
+   720,
+   72
+  ],
+  "frames": {
+   "health_bar": {
+    "x": 0,
+    "y": 0,
+    "w": 144,
+    "h": 72,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "stamina_bar": {
+    "x": 144,
+    "y": 0,
+    "w": 144,
+    "h": 72,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "ammo_counter": {
+    "x": 288,
+    "y": 0,
+    "w": 144,
+    "h": 72,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "crosshair": {
+    "x": 432,
+    "y": 0,
+    "w": 144,
+    "h": 72,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "interact": {
+    "x": 576,
+    "y": 0,
+    "w": 144,
+    "h": 72,
+    "col": 4,
+    "row": 0,
+    "index": 4
+   }
+  }
+ },
+ "ui_progress_bars": {
+  "file": "ui/frames/",
+  "size": [
+   128,
+   24
+  ],
+  "inner_rect": [
+   5,
+   5,
+   122,
+   18
+  ],
+  "note": "bar_under.png = texture_under; bar_fill_*.png = texture_progress (same size, aligned at 0,0)"
+ },
+ "fx_particles": {
+  "file": "fx/fx_particles_sheet.png",
+  "cell": [
+   72,
+   72
+  ],
+  "grid": [
+   4,
+   5
+  ],
+  "hframes": 4,
+  "vframes": 5,
+  "size": [
+   288,
+   360
+  ],
+  "frames": {
+   "muzzle_0": {
+    "x": 0,
+    "y": 0,
+    "w": 72,
+    "h": 72,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "muzzle_1": {
+    "x": 72,
+    "y": 0,
+    "w": 72,
+    "h": 72,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "muzzle_2": {
+    "x": 144,
+    "y": 0,
+    "w": 72,
+    "h": 72,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   },
+   "muzzle_3": {
+    "x": 216,
+    "y": 0,
+    "w": 72,
+    "h": 72,
+    "col": 3,
+    "row": 0,
+    "index": 3
+   },
+   "spark_0": {
+    "x": 0,
+    "y": 72,
+    "w": 72,
+    "h": 72,
+    "col": 0,
+    "row": 1,
+    "index": 4
+   },
+   "spark_1": {
+    "x": 72,
+    "y": 72,
+    "w": 72,
+    "h": 72,
+    "col": 1,
+    "row": 1,
+    "index": 5
+   },
+   "spark_2": {
+    "x": 144,
+    "y": 72,
+    "w": 72,
+    "h": 72,
+    "col": 2,
+    "row": 1,
+    "index": 6
+   },
+   "spark_3": {
+    "x": 216,
+    "y": 72,
+    "w": 72,
+    "h": 72,
+    "col": 3,
+    "row": 1,
+    "index": 7
+   },
+   "splash_0": {
+    "x": 0,
+    "y": 144,
+    "w": 72,
+    "h": 72,
+    "col": 0,
+    "row": 2,
+    "index": 8
+   },
+   "splash_1": {
+    "x": 72,
+    "y": 144,
+    "w": 72,
+    "h": 72,
+    "col": 1,
+    "row": 2,
+    "index": 9
+   },
+   "splash_2": {
+    "x": 144,
+    "y": 144,
+    "w": 72,
+    "h": 72,
+    "col": 2,
+    "row": 2,
+    "index": 10
+   },
+   "splash_3": {
+    "x": 216,
+    "y": 144,
+    "w": 72,
+    "h": 72,
+    "col": 3,
+    "row": 2,
+    "index": 11
+   },
+   "dust_0": {
+    "x": 0,
+    "y": 216,
+    "w": 72,
+    "h": 72,
+    "col": 0,
+    "row": 3,
+    "index": 12
+   },
+   "dust_1": {
+    "x": 72,
+    "y": 216,
+    "w": 72,
+    "h": 72,
+    "col": 1,
+    "row": 3,
+    "index": 13
+   },
+   "dust_2": {
+    "x": 144,
+    "y": 216,
+    "w": 72,
+    "h": 72,
+    "col": 2,
+    "row": 3,
+    "index": 14
+   },
+   "dust_3": {
+    "x": 216,
+    "y": 216,
+    "w": 72,
+    "h": 72,
+    "col": 3,
+    "row": 3,
+    "index": 15
+   },
+   "decal_0": {
+    "x": 0,
+    "y": 288,
+    "w": 72,
+    "h": 72,
+    "col": 0,
+    "row": 4,
+    "index": 16
+   },
+   "decal_1": {
+    "x": 72,
+    "y": 288,
+    "w": 72,
+    "h": 72,
+    "col": 1,
+    "row": 4,
+    "index": 17
+   },
+   "decal_2": {
+    "x": 144,
+    "y": 288,
+    "w": 72,
+    "h": 72,
+    "col": 2,
+    "row": 4,
+    "index": 18
+   },
+   "decal_3": {
+    "x": 216,
+    "y": 288,
+    "w": 72,
+    "h": 72,
+    "col": 3,
+    "row": 4,
+    "index": 19
+   }
+  }
+ },
+ "fx_shadows": {
+  "file": "fx/fx_shadows_sheet.png",
+  "cell": [
+   96,
+   40
+  ],
+  "grid": [
+   3,
+   1
+  ],
+  "hframes": 3,
+  "vframes": 1,
+  "size": [
+   288,
+   40
+  ],
+  "frames": {
+   "shadow_small": {
+    "x": 0,
+    "y": 0,
+    "w": 96,
+    "h": 40,
+    "col": 0,
+    "row": 0,
+    "index": 0
+   },
+   "shadow_medium": {
+    "x": 96,
+    "y": 0,
+    "w": 96,
+    "h": 40,
+    "col": 1,
+    "row": 0,
+    "index": 1
+   },
+   "shadow_large": {
+    "x": 192,
+    "y": 0,
+    "w": 96,
+    "h": 40,
+    "col": 2,
+    "row": 0,
+    "index": 2
+   }
+  }
+ }
+}

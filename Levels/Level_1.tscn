@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dnuv2w2814454"]
+
+[ext_resource type="Texture2D" uid="uid://43jr514trf10" path="res://BG1.png" id="1_wvewk"]
+[ext_resource type="PackedScene" uid="uid://d0qg3x665wugm" path="res://Scenes/player.tscn" id="2_xtg75"]
+[ext_resource type="PackedScene" uid="uid://cjgx3fkunkjqi" path="res://Scenes/Zombie.tscn" id="3_ui7qv"]
+[ext_resource type="PackedScene" uid="uid://46lnsmv8sk83" path="res://Scenes/health_icon.tscn" id="4_xtg75"]
+[ext_resource type="Script" uid="uid://cua58yg6lys4m" path="res://Levels/door.gd" id="5_ui7qv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r40sf"]
+size = Vector2(77.25, 165)
+
+[node name="Node2D" type="Node2D" unique_id=493563487]
+
+[node name="player" parent="." unique_id=1662768559 groups=["player", "zombies"] instance=ExtResource("2_xtg75")]
+position = Vector2(422, 616)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=810268816]
+offset_top = -13.0
+offset_right = 1393.0
+offset_bottom = 1116.0
+texture = ExtResource("1_wvewk")
+
+[node name="Zombie" parent="." unique_id=697328472 instance=ExtResource("3_ui7qv")]
+position = Vector2(976, 321)
+
+[node name="items" type="StaticBody2D" parent="." unique_id=1476657717]
+
+[node name="items" type="CollisionPolygon2D" parent="items" unique_id=998213798]
+light_mask = 1048575
+visibility_layer = 1048575
+position = Vector2(502, 480)
+polygon = PackedVector2Array(38.501587, -8.054993, 116.50159, -9.054993, 109.50159, 124.94501, 50, 126, 48.501587, 110.94501, -3.498413, 110.94501, -14, 46, -14.498413, 4.9450073, -13, -11)
+
+[node name="Health_icon" parent="." unique_id=114914872 instance=ExtResource("4_xtg75")]
+position = Vector2(432, 469)
+
+[node name="Door" type="Area2D" parent="." unique_id=360628056]
+script = ExtResource("5_ui7qv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=298412804]
+position = Vector2(69.375, 519.5)
+shape = SubResource("RectangleShape2D_r40sf")

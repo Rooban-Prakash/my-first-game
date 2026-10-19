@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://brej1u3720mqg"]
+
+[ext_resource type="Texture2D" uid="uid://dda0ksj0qhr72" path="res://Asset/Asset/files/zombie_survival/environment/frames/props_nature_sheet/tree.png" id="1_etvfw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xv7hl"]
+radius = 32.0
+height = 70.0
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=2116691626]
+
+[node name="Tree" type="Sprite2D" parent="." unique_id=1480530708]
+position = Vector2(597, 236)
+texture = ExtResource("1_etvfw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1759476369]
+position = Vector2(596, 272)
+shape = SubResource("CapsuleShape2D_xv7hl")
+debug_color = Color(0.12760171, 0.6197034, 0.5347607, 0.41960785)

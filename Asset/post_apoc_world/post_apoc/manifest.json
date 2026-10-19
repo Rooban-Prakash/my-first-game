@@ -1,0 +1,205 @@
+{
+ "buildings/ruined_house_1": {
+  "file": "buildings/ruined_house_1.png",
+  "size": [
+   120,
+   157
+  ]
+ },
+ "buildings/ruined_house_2": {
+  "file": "buildings/ruined_house_2.png",
+  "size": [
+   128,
+   155
+  ]
+ },
+ "buildings/ruined_house_3": {
+  "file": "buildings/ruined_house_3.png",
+  "size": [
+   126,
+   138
+  ]
+ },
+ "buildings/ruined_tower": {
+  "file": "buildings/ruined_tower.png",
+  "size": [
+   120,
+   184
+  ]
+ },
+ "buildings/ruined_castle": {
+  "file": "buildings/ruined_castle.png",
+  "size": [
+   312,
+   208
+  ]
+ },
+ "buildings/ruined_archery": {
+  "file": "buildings/ruined_archery.png",
+  "size": [
+   183,
+   179
+  ]
+ },
+ "buildings/ruined_barracks": {
+  "file": "buildings/ruined_barracks.png",
+  "size": [
+   184,
+   198
+  ]
+ },
+ "buildings/ruined_monastery": {
+  "file": "buildings/ruined_monastery.png",
+  "size": [
+   160,
+   265
+  ]
+ },
+ "nature/dead_tree_1": {
+  "file": "nature/dead_tree_1.png",
+  "size": [
+   119,
+   190
+  ]
+ },
+ "nature/dead_tree_2": {
+  "file": "nature/dead_tree_2.png",
+  "size": [
+   106,
+   244
+  ]
+ },
+ "nature/dead_tree_3": {
+  "file": "nature/dead_tree_3.png",
+  "size": [
+   90,
+   146
+  ]
+ },
+ "nature/dead_tree_4": {
+  "file": "nature/dead_tree_4.png",
+  "size": [
+   80,
+   122
+  ]
+ },
+ "nature/dry_bush_1": {
+  "file": "nature/dry_bush_1.png",
+  "size": [
+   67,
+   46
+  ]
+ },
+ "nature/dry_bush_2": {
+  "file": "nature/dry_bush_2.png",
+  "size": [
+   46,
+   34
+  ]
+ },
+ "nature/dry_bush_3": {
+  "file": "nature/dry_bush_3.png",
+  "size": [
+   78,
+   59
+  ]
+ },
+ "nature/dry_bush_4": {
+  "file": "nature/dry_bush_4.png",
+  "size": [
+   46,
+   42
+  ]
+ },
+ "nature/rubble_rock_1": {
+  "file": "nature/rubble_rock_1.png",
+  "size": [
+   32,
+   34
+  ]
+ },
+ "nature/rubble_rock_2": {
+  "file": "nature/rubble_rock_2.png",
+  "size": [
+   50,
+   40
+  ]
+ },
+ "nature/rubble_rock_3": {
+  "file": "nature/rubble_rock_3.png",
+  "size": [
+   49,
+   33
+  ]
+ },
+ "nature/rubble_rock_4": {
+  "file": "nature/rubble_rock_4.png",
+  "size": [
+   62,
+   42
+  ]
+ },
+ "resources/scrap_wood_pile": {
+  "file": "resources/scrap_wood_pile.png",
+  "size": [
+   47,
+   28
+  ]
+ },
+ "resources/spent_casing_pile": {
+  "file": "resources/spent_casing_pile.png",
+  "size": [
+   24,
+   26
+  ]
+ },
+ "resources/spoiled_meat_pile": {
+  "file": "resources/spoiled_meat_pile.png",
+  "size": [
+   47,
+   36
+  ]
+ },
+ "ground/wasteland_dirt_64": {
+  "file": "ground/wasteland_dirt_64.png",
+  "size": [
+   64,
+   64
+  ]
+ },
+ "ground/rubble_concrete_64_NOT_SEAMLESS": {
+  "file": "ground/rubble_concrete_64_NOT_SEAMLESS.png",
+  "size": [
+   64,
+   64
+  ]
+ },
+ "ground/scorched_ground_64": {
+  "file": "ground/scorched_ground_64.png",
+  "size": [
+   64,
+   64
+  ]
+ },
+ "fx/explosion": {
+  "file": "fx/explosion.png",
+  "size": [
+   1374,
+   64
+  ]
+ },
+ "fx/fire": {
+  "file": "fx/fire.png",
+  "size": [
+   461,
+   24
+  ]
+ },
+ "fx/dust": {
+  "file": "fx/dust.png",
+  "size": [
+   481,
+   33
+  ]
+ }
+}

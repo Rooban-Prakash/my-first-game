@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c0iwrhv4bikrf"]
+
+[ext_resource type="Texture2D" uid="uid://dv58lqtyvycsj" path="res://BG02.png" id="1_ll1bl"]
+
+[node name="Level 2" type="Node2D" unique_id=1888797646]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=518771180]
+offset_right = 1672.0
+offset_bottom = 941.0
+texture = ExtResource("1_ll1bl")

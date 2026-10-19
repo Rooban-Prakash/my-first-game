@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bhxx4dg7575p3"]
+
+[ext_resource type="Script" uid="uid://4yhr5binbgoo" path="res://zombie_damage.gd" id="1_71kml"]
+
+[node name="Zombie damage" type="Label" unique_id=1522718666]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_71kml")

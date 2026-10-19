@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dbjxc5mwl3cld"]
+
+[ext_resource type="Script" uid="uid://dmje35wp1cvu6" path="res://Main.gd" id="1"]
+
+[node name="CaveScene" type="Node2D" unique_id=1497733761]
+script = ExtResource("1")

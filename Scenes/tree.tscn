@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://goc1xfj323jo"]
+
+[ext_resource type="Texture2D" uid="uid://cw8alnbkmq7ek" path="res://new spsrite files/environment/frames/props_nature_sheet/bush_a.png" id="1_0vwjc"]
+[ext_resource type="Script" uid="uid://dj6a70e4sjesa" path="res://Scenes/tree.gd" id="1_rsuno"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tnqc8"]
+radius = 20.0
+
+[node name="Tree" type="StaticBody2D" unique_id=1038049220]
+modulate = Color(1, 1, 1, 0.9882353)
+position = Vector2(205, 157)
+script = ExtResource("1_rsuno")
+
+[node name="BushA" type="Sprite2D" parent="." unique_id=1991019073]
+z_index = 3
+position = Vector2(8.940697e-07, -68)
+scale = Vector2(1, 1.3970588)
+texture = ExtResource("1_0vwjc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1772593251]
+position = Vector2(1, 6.0000005)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CircleShape2D_tnqc8")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1064077836]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=400009318]
+light_mask = 2
+polygon = PackedVector2Array(0, -1, -21, -10, -19, -33, -15, -39, -9, -51, 0, -57, 16, -46, 18, -38, 20, -25, 23, -8)

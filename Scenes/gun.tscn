@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://2ehps0ir8bki"]
+
+[ext_resource type="Texture2D" uid="uid://eqygfhlu4t2b" path="res://Asset/Asset/files/zombie_survival/items/frames/weapons_sheet/pistol.png" id="1_nxj5y"]
+[ext_resource type="Script" uid="uid://cglchywwbsb78" path="res://Scenes/gun.gd" id="1_oqrbh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tnqc8"]
+radius = 16.03122
+
+[node name="Area2D" type="Area2D" unique_id=888218219]
+position = Vector2(106, 55)
+script = ExtResource("1_oqrbh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1221555475]
+position = Vector2(-2, -1)
+shape = SubResource("CircleShape2D_tnqc8")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=615784558]
+position = Vector2(-2, -1)
+
+[node name="Pistol" type="Sprite2D" parent="Marker2D" unique_id=1172366995]
+light_mask = 3
+visibility_layer = 9
+position = Vector2(4, -2)
+scale = Vector2(0.3203125, 0.3611111)
+texture = ExtResource("1_nxj5y")
+
+[node name="Shooting point" type="Marker2D" parent="Marker2D/Pistol" unique_id=2087012831]
+position = Vector2(24.975616, -3.8146973e-06)

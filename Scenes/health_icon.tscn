@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://46lnsmv8sk83"]
+
+[ext_resource type="Script" uid="uid://bmvmledrupc48" path="res://Scenes/health_icon.gd" id="1_1d58w"]
+[ext_resource type="Texture2D" uid="uid://i688vjhi6ohu" path="res://new spsrite files/ui/frames/ui_icons_sheet/health.png" id="3_2tpc1"]
+
+[node name="Health_icon" type="Area2D" unique_id=114914872]
+collision_layer = 5
+script = ExtResource("1_1d58w")
+
+[node name="health_png" type="Sprite2D" parent="." unique_id=7142509]
+light_mask = 5
+position = Vector2(-1, -4.0000005)
+scale = Vector2(0.32500002, 0.3125)
+texture = ExtResource("3_2tpc1")
+
+[node name="collision" type="CollisionPolygon2D" parent="." unique_id=862210421]
+light_mask = 4
+visibility_layer = 4
+position = Vector2(-26, -19)
+scale = Vector2(0.40433675, 0.33284885)
+polygon = PackedVector2Array(50.302834, 67.074234, 44.517345, 57.082966, 42.04416, 48.069866, 44.517345, 42.061134, 46.990532, 39.056767, 52.302834, 35.074234, 59.302834, 40.074234, 61.302834, 42.074234, 69.24921, 39.056767, 76.66876, 39.056767, 79.14195, 42.061134, 79.14195, 48.069866, 79.14195, 54.078598, 77.30284, 64.074234, 69.30284, 72.074234, 65.30283, 77.07422, 61.829647, 84.12227, 56.302834, 74.074234)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

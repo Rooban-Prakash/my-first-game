@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cf5igtwvha55p"]
+
+[ext_resource type="Script" uid="uid://bmvmledrupc48" path="res://Scenes/health_icon.gd" id="1_krq22"]
+[ext_resource type="Texture2D" uid="uid://i688vjhi6ohu" path="res://new spsrite files/ui/frames/ui_icons_sheet/health.png" id="1_w15pt"]
+[ext_resource type="PackedScene" uid="uid://d0qg3x665wugm" path="res://Scenes/player.tscn" id="3_majrr"]
+
+[node name="Health_icon" type="Area2D" unique_id=114914872]
+script = ExtResource("1_krq22")
+
+[node name="Player" parent="." unique_id=1662768559 instance=ExtResource("3_majrr")]
+
+[node name="health_png" type="Sprite2D" parent="." unique_id=7142509]
+position = Vector2(-1, -10)
+scale = Vector2(0.99444443, 1)
+texture = ExtResource("1_w15pt")
+
+[node name="detection_area" type="CollisionPolygon2D" parent="." unique_id=862210421]
+polygon = PackedVector2Array(-13, 15, -23, 6, -27, -4, -24, -11, -19, -16, -11, -17, -4, -12, -2, -10, 4, -17, 13, -17, 20, -11, 22, -8, 22, 3, 14, 12, 6, 20, 2, 25, -2, 27, -7, 22)
+
+[connection signal="body_entered" from="." to="Player" method="_on_health_icon_body_entered"]
