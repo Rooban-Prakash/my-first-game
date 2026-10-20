@@ -16,6 +16,7 @@ texture = ExtResource("1_ll1bl")
 
 [node name="Zombie4" parent="TextureRect" unique_id=697328472 instance=ExtResource("2_kbe2v")]
 position = Vector2(455, 322)
+zombie_id = "1"
 
 [node name="right_side" type="Marker2D" parent="." unique_id=1153071728]
 position = Vector2(1282, 412)

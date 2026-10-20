@@ -1,4 +1,3 @@
-
 extends CharacterBody2D
 
 @export var zombie_id: String = ""
@@ -17,6 +16,8 @@ var attack_timer := 0.0
 var player: Node2D = null
 
 var damage_number_scene = preload("res://zombie_damage.tscn")
+#@onready var nav_agent: NavigationAgent2D = get_tree().current_scene.find_child("NavigationAgent2D", true, false)
+@onready var nav_agent: NavigationAgent2D = get_parent().find_child("NavigationAgent2D", true, false)
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var detection_area: Area2D = $"Detection Area"
@@ -37,7 +38,11 @@ func _ready() -> void:
 		push_error("Health_label was not found!")
 
 	update_health_label()
+	
 
+	if nav_agent == null:
+		push_error("NavigationAgent2D not found in the current scene!")
+		return
 
 func _physics_process(delta: float) -> void:
 	if player == null or not is_instance_valid(player):
@@ -128,6 +133,8 @@ func die() -> void:
 		return
 
 	is_dead = true
+	var game = get_tree().current_scene
+	game.register_zombie_kill()
 	velocity = Vector2.ZERO
 
 	# Save the zombie's death before removing it.

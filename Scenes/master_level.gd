@@ -3,15 +3,22 @@ extends Node2D
 
 @onready var player = $player
 @onready var world = $World
+@onready var kill_label: Label = get_node_or_null("GUI2/Kill Count")
 
 var current_room: Node2D
 var killed_zombies: Dictionary = {}
+var zombie_kill_count: int = 0
 
 
 func _ready() -> void:
-	# Find the starting room
 	if world.get_child_count() > 0:
 		current_room = world.get_child(0)
+
+	# Set up the kill counter
+	if kill_label != null:
+		kill_label.text = "Zombies Killed: 0"
+	else:
+		push_warning("KillCount label not found. Check CanvasLayer/KillCount.")
 
 	# Debug
 	print("=== MASTER DEBUG ===")
@@ -22,8 +29,23 @@ func _ready() -> void:
 	for child in world.get_children():
 		print("World child: ", child.name, " | Path: ", child.get_path())
 
-	print("Current room: ", current_room.name if current_room != null else "NONE")
+	if current_room != null:
+		print("Current room: ", current_room.name)
+	else:
+		print("Current room: NONE")
+
 	print("====================")
+
+
+
+# Update the kill counter
+func register_zombie_kill() -> void:
+	zombie_kill_count += 1
+
+	if kill_label != null:
+		kill_label.text = "Zombies Killed: " + str(zombie_kill_count)
+
+	print("Zombies killed: ", zombie_kill_count)
 
 
 # Save the ID of a killed zombie
@@ -61,7 +83,12 @@ func restore_room_state(room: Node2D) -> void:
 func change_room(room_path: String, spawn_name: String) -> void:
 	print("=== ROOM CHANGE START ===")
 	print("Requested room: ", room_path)
-	print("Current room: ", current_room.name if current_room != null else "NONE")
+
+	if current_room != null:
+		print("Current room: ", current_room.name)
+	else:
+		print("Current room: NONE")
+
 	print("World children before: ", world.get_child_count())
 
 	var packed_room = load(room_path) as PackedScene

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dehnpeyyvp4s5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_arsda"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=957215318]
+
+[node name="KillCount" type="Label" parent="." unique_id=37407301]
+anchors_preset = -1
+anchor_right = 1.0910001
+anchor_bottom = 1.552
+offset_left = 268.0
+offset_top = 641.0
+offset_right = -869.4801
+offset_bottom = -310.44006
+text = "test: "
+label_settings = SubResource("LabelSettings_arsda")
+horizontal_alignment = 2
+autowrap_mode = 3

@@ -399,11 +399,13 @@ animations = [{
 [node name="Player" type="CharacterBody2D" unique_id=1662768559 groups=["player"]]
 z_index = 1
 position = Vector2(332, 200)
-collision_layer = 3
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_gymyn")
 bullet_scene = ExtResource("2_ukyrk")
 
 [node name="Player_Stamina" type="Label" parent="." unique_id=1372792302]
+visible = false
 custom_maximum_size = Vector2(74, -1)
 anchors_preset = 2
 anchor_top = 1.0
@@ -418,6 +420,7 @@ text = "Stamina: _%"
 metadata/_edit_use_anchors_ = true
 
 [node name="Player_Speed" type="Label" parent="." unique_id=1111257478]
+visible = false
 custom_maximum_size = Vector2(74, -1)
 anchors_preset = 2
 anchor_top = 1.0
@@ -432,6 +435,7 @@ text = "Stamina: _%"
 metadata/_edit_use_anchors_ = true
 
 [node name="Player Health" type="Label" parent="." unique_id=564620068]
+visible = false
 custom_maximum_size = Vector2(74, -1)
 anchors_preset = 2
 anchor_top = 1.0
@@ -449,6 +453,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(-4.5, -1)
 scale = Vector2(2.5, 2.5)
 shape = SubResource("RectangleShape2D_g3thc")
+debug_color = Color(0, 0.6, 0.6745098, 0.4392157)
 
 [node name="Visual" type="AnimatedSprite2D" parent="." unique_id=546275022 groups=["player"]]
 light_mask = 3

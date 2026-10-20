@@ -64,6 +64,7 @@ var dodge_direction := Vector2.ZERO
 
 @onready var animated_sprite: AnimatedSprite2D = $Visual
 @onready var stamina_label: Label = $Player_Stamina
+#@onready var stamina_label: Label = $Player_Stamina
 @onready var speed_label: Label = $Player_Speed
 @onready var health_label: Label = $"Player Health"
 
@@ -81,7 +82,7 @@ var facing_direction := "left"
 
 func _ready() -> void:
 	health = max_health
-	update_health_label()
+	#update_health_label()
 	print("Player health: ", health)
 
 
@@ -163,7 +164,7 @@ func _physics_process(delta: float) -> void:
 	# Debug display
 	stamina_label.text = "Stamina: " + str(round(stamina))
 	speed_label.text = "Speed: " + str(round(current_speed))
-	update_health_label()
+	#update_health_label()
 
 	# Movement
 	velocity = direction * current_speed
@@ -282,8 +283,8 @@ func update_mouse_direction() -> void:
 # HEALTH DISPLAY
 # =========================
 
-func update_health_label() -> void:
-	health_label.text = "Health: " + str(health)
+#func update_health_label() -> void:
+	#health_label.text = "Health: " + str(health)
 
 
 # =========================
@@ -295,7 +296,7 @@ func take_damage(damage: int) -> void:
 		return
 
 	health = max(health - damage, 0)
-	update_health_label()
+	#update_health_label()
 
 	print("Player health: ", health)
 
@@ -312,7 +313,7 @@ func heal(amount: int) -> void:
 		return
 
 	health = clampi(health + amount, 0, max_health)
-	update_health_label()
+	#update_health_label()
 
 	print("Player healed. Current health: ", health)
 

@@ -4,6 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://cjgx3fkunkjqi" path="res://Scenes/Zombie.tscn" id="2_waoec"]
 [ext_resource type="Script" uid="uid://cua58yg6lys4m" path="res://Levels/door.gd" id="5_ui7qv"]
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_r40sf"]
+vertices = PackedVector2Array(15, -19.828125, 1373.9297, 2.828125, 629.03906, 473.8125, 540.64844, 474.9375, 479.95313, 471.46875, 15, 1125.9375, 477.4922, 497.53906, 478.0078, 539.8594, 489.9922, 613.9531, 1366.0625, 1118.0469, 542.96094, 629.15625, 621, 627.78125, 541.4531, 613.9531)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 0, 4, 6), PackedInt32Array(5, 6, 7), PackedInt32Array(5, 7, 8), PackedInt32Array(9, 5, 8, 10), PackedInt32Array(2, 1, 9, 11), PackedInt32Array(8, 12, 10), PackedInt32Array(9, 10, 11)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(5, -30, 5, 1136, 1376, 1128, 1384, -7)])
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r40sf"]
 size = Vector2(156.8125, 167.75)
 
@@ -15,13 +20,23 @@ offset_right = 1393.0
 offset_bottom = 1116.0
 texture = ExtResource("1_wvewk")
 
-[node name="items" type="StaticBody2D" parent="." unique_id=1476657717]
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1136350766]
+position = Vector2(0, -13)
+navigation_polygon = SubResource("NavigationPolygon_r40sf")
 
-[node name="items" type="CollisionPolygon2D" parent="items" unique_id=998213798]
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1892603885]
+
+[node name="Obstacles" type="StaticBody2D" parent="NavigationAgent2D" unique_id=1476657717]
+
+[node name="items" type="CollisionPolygon2D" parent="NavigationAgent2D/Obstacles" unique_id=998213798]
 light_mask = 1048575
 visibility_layer = 1048575
 position = Vector2(502, 480)
 polygon = PackedVector2Array(38.501587, -8.054993, 116.50159, -9.054993, 109.50159, 124.94501, 50, 126, 48.501587, 110.94501, -3.498413, 110.94501, -14, 46, -14.498413, 4.9450073, -13, -11)
+
+[node name="Test Zombie" parent="NavigationAgent2D" unique_id=834687471 instance=ExtResource("2_waoec")]
+position = Vector2(926, 614)
+zombie_id = "1"
 
 [node name="Door" type="Area2D" parent="." unique_id=360628056]
 script = ExtResource("5_ui7qv")
@@ -69,10 +84,6 @@ position = Vector2(684, 973)
 
 [node name="right_side" type="Marker2D" parent="." unique_id=820882764]
 position = Vector2(1297, 539)
-
-[node name="Test Zombie" parent="." unique_id=834687471 instance=ExtResource("2_waoec")]
-position = Vector2(926, 614)
-zombie_id = "1"
 
 [node name="Test Zombie2" parent="." unique_id=697328472 instance=ExtResource("2_waoec")]
 position = Vector2(730, 475)

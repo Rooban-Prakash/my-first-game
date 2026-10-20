@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dtb75luq5cxgp"]
+
+[ext_resource type="Script" uid="uid://cxh5kwpxp8e2w" path="res://gui.gd" id="1_80edf"]
+
+[node name="GUI" type="CanvasLayer" unique_id=1748371272]
+script = ExtResource("1_80edf")
+
+[node name="Health" type="Label" parent="." unique_id=1723388717]
+offset_left = 1128.0
+offset_top = 10.0
+offset_right = 1197.0
+offset_bottom = 39.0
+text = "Health: "
+
+[node name="Stamina" type="Label" parent="." unique_id=2027050378]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1128.0
+offset_top = 30.0
+offset_right = 29.0
+offset_bottom = -662.0
+text = "Stamina: "
+
+[node name="Kill Count" type="Label" parent="." unique_id=1283031141]
+offset_left = 1128.0
+offset_top = 53.0
+offset_right = 1211.0
+offset_bottom = 82.0
+text = "Kill Count: "
